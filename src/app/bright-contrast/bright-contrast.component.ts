@@ -16,8 +16,6 @@ export class BrightContrastComponent implements OnInit {
 
 
   private brightContrast = () => {
-    //this.contrast = parseInt(this.contrast);
-    //this.brightness = parseInt(this.brightness);
     for (var i = 0; i < this.imageService.numPixels; i++) {
       this.imageService.pixels[i * 4] = (this.imageService.pixels[i * 4] - 128) * this.contrast + 128 + this.brightness; // Red
       this.imageService.pixels[i * 4 + 1] = (this.imageService.pixels[i * 4 + 1] - 128) * this.contrast + 128 + this.brightness; // Green

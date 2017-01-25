@@ -10,7 +10,7 @@ export class ImageService {
   imageData: any;
   pixels: any;
   numPixels: number;
-  functions: Object = {};
+  functions: any = {};
 
 
   constructor() {

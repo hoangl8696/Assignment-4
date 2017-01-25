@@ -8,13 +8,17 @@ import { CanvasComponent } from './canvas/canvas.component';
 import {ImageService} from "./services/image.service";
 import { FileComponent } from './file/file.component';
 import { BrightContrastComponent } from './bright-contrast/bright-contrast.component';
+import { ColorFilterComponent } from './color-filter/color-filter.component';
+import { AutoContrastComponent } from './auto-contrast/auto-contrast.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CanvasComponent,
     FileComponent,
-    BrightContrastComponent
+    BrightContrastComponent,
+    ColorFilterComponent,
+    AutoContrastComponent
   ],
   imports: [
     BrowserModule,
